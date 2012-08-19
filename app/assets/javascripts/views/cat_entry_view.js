@@ -12,6 +12,6 @@ EmberMobile.CatEntryView =  EmberMobile.PartialView.extend({
 
     showCat: function(){
         this.set('selectedCat', this.get('cat'));
-        EmberMobile.changePage('cat')
+        EmberMobile.changePage('cat', {transition: 'slide'})
     }
 });

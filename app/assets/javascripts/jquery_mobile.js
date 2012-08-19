@@ -19,7 +19,10 @@ EmberMobile.PartialView = Ember.View.extend({
 EmberMobile.PageView = EmberMobile.PartialView.extend({
     'data-role': 'page',
 
-    loadPage: function(){ jQuery.mobile.changePage(this.$()) },
+    loadPage: function(options){
+        options = options || {};
+        jQuery.mobile.changePage(this.$(), options)
+    },
     onPageShow: function(){},
     onPageHide: function(){}
 });
@@ -56,7 +59,7 @@ jQuery(document).bind('pageinit', function(){
 
     // LOAD FIRST PAGE
     if (!EmberMobile.initialized) {
-        setTimeout(function(){ EmberMobile.changePage('list')}, 1);
+        setTimeout(function(){ EmberMobile.changePage('list', {transition: 'pop'})}, 1);
         EmberMobile.initialized = true
     }
 });

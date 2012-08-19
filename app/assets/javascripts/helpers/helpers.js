@@ -4,12 +4,12 @@ EmberMobile.currentPage  = "#splash_screen";
 EmberMobile.backPage = function(){
     if (this.pagesHistory.length > 0) {
         this.currentPage = null;
-        this.changePage(this.pagesHistory.pop())
+        this.changePage(this.pagesHistory.pop(), {transition: 'slide', reverse: true})
     }
 };
 
-EmberMobile.changePage = function(nextPage){
-    this.get(nextPage).loadPage();
+EmberMobile.changePage = function(nextPage, options){
+    this.get(nextPage).loadPage(options);
     if (this.currentPage) {
         this.pagesHistory.push(this.currentPage)
     }

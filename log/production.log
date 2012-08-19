@@ -1,0 +1,146 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 01:57:15 +0200
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>EmberMobile</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__499453063_87922840'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 01:57:42 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>EmberMobile</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__499453063_87922840'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 01:57:44 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 1ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>EmberMobile</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__499453063_87922840'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 01:58:20 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 1ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>EmberMobile</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__499453063_87922840'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 01:58:21 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>EmberMobile</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__499453063_87922840'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 01:58:29 +0200
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.erb within layouts/application (2.5ms)
+Compiled styles.css  (0ms)  (pid 21951)
+Compiled jquery.mobile.css  (2160ms)  (pid 21951)
+Compiled application.css  (2187ms)  (pid 21951)
+Compiled env.js  (0ms)  (pid 21951)
+Compiled jquery.js  (39ms)  (pid 21951)
+Compiled jquery_ujs.js  (0ms)  (pid 21951)
+Compiled jquery.mobile.js  (1ms)  (pid 21951)
+Compiled handlebars.js  (0ms)  (pid 21951)
+Compiled ember.js  (37ms)  (pid 21951)
+Compiled ember-data.js  (1ms)  (pid 21951)
+Compiled ember_mobile.js  (0ms)  (pid 21951)
+Compiled controllers/cats_controller.js  (0ms)  (pid 21951)
+Compiled helpers/helpers.js  (0ms)  (pid 21951)
+Compiled jquery_mobile.js  (0ms)  (pid 21951)
+Compiled models/cat.js  (0ms)  (pid 21951)
+Compiled routes/app_router.js  (0ms)  (pid 21951)
+Compiled store.js  (0ms)  (pid 21951)
+Compiled templates/cat.js  (96ms)  (pid 21951)
+Compiled templates/list.js  (4ms)  (pid 21951)
+Compiled templates/all.js  (110ms)  (pid 21951)
+Compiled views/cat_entry_view.js  (0ms)  (pid 21951)
+Compiled views/cat_view.js  (0ms)  (pid 21951)
+Compiled views/list_view.js  (0ms)  (pid 21951)
+Compiled application.js  (349ms)  (pid 21951)
+Completed 200 OK in 2645ms (Views: 2644.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5c24c58f6bddb10f83e4b7078e61c91d.css" for 127.0.0.1 at 2012-08-19 01:58:33 +0200
+Served asset /application-5c24c58f6bddb10f83e4b7078e61c91d.css - 200 OK (0ms)
+
+
+Started GET "/assets/application-b1af5c44fe93da4b232efaf2a920f8c6.js" for 127.0.0.1 at 2012-08-19 01:58:33 +0200
+Served asset /application-b1af5c44fe93da4b232efaf2a920f8c6.js - 200 OK (0ms)
+
+
+Started GET "/assets/templates/all-d8630ae840b0fdf719045f63c5374e6d.js" for 127.0.0.1 at 2012-08-19 01:58:33 +0200
+Served asset /templates/all-d8630ae840b0fdf719045f63c5374e6d.js - 200 OK (0ms)
+
+
+Started GET "/cats?page=1" for 127.0.0.1 at 2012-08-19 01:58:34 +0200
+Processing by CatsController#index as */*
+  Parameters: {"page"=>"1"}
+Completed 200 OK in 928ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats?page=2" for 127.0.0.1 at 2012-08-19 01:58:42 +0200
+Processing by CatsController#index as */*
+  Parameters: {"page"=>"2"}
+Completed 200 OK in 5430ms (Views: 2.0ms | ActiveRecord: 0.0ms)

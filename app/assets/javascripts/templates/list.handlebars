@@ -1,0 +1,26 @@
+<div data-role="header" data-theme="b">
+    <h3>LOLcats.com</h3>
+</div>
+
+<div data-role="content">
+    <ul data-role="listview" data-inset="true">
+    {{#each cats}}
+        {{#view EmberMobile.CatEntryView catBinding="this"}}
+            <a class="ui-link-inherit" {{action showCat}}>
+                <img {{bindAttr src="url"}} class="ui-li-thumb"/>
+                <h3 class="ui-li-heading">{{label}}</h3>
+            </a>
+        {{/view}}
+    {{/each}}
+    </ul>
+
+    <a data-role="button" data-theme="b"
+    data-icon="arrow-r" data-iconpos="right" {{action goNext}}>
+        Next
+    </a>
+    <a data-role="button" data-theme="b"
+    data-icon="arrow-l" data-iconpos="left" {{action goPrevious}}>
+        Previous
+    </a>
+
+</div>

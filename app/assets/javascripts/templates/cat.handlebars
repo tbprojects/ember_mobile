@@ -1,0 +1,12 @@
+<div data-role="header" data-theme="b">
+    <h3>LOLcats.com</h3>
+    <a data-role="button" {{action "backPage"}}
+       data-icon="back" data-iconpos="left" class="ui-btn-left">
+        Back
+    </a>
+</div>
+
+<div data-role="content">
+    <h3 class="tc">{{cat.label}}</h3>
+    <img {{bindAttr src="cat.url"}} class="picture" />
+</div>

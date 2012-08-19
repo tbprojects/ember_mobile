@@ -1,0 +1,7 @@
+h1. Ember Mobile
+
+It is an example of single-page app built with
+* Ember.js
+* jQuery mobile
+
+Tomasz Borowski 2012

@@ -24037,3 +24037,322 @@ Started GET "/cats?page=1" for 127.0.0.1 at 2012-08-19 01:59:56 +0200
 Processing by CatsController#index as */*
   Parameters: {"page"=>"1"}
 Completed 200 OK in 11740ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 06:54:07 +0200
+Connecting to database specified by database.yml
+
+SQLite3::CantOpenException (unable to open database file):
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite3_adapter.rb:26:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite3_adapter.rb:26:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite3_adapter.rb:26:in `sqlite3_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  /home/boro/.rvm/rubies/ruby-1.9.2-p318/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  /home/boro/.rvm/rubies/ruby-1.9.2-p318/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__273211498__call__194242222__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/boro/.rvm/rubies/ruby-1.9.2-p318/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/boro/.rvm/rubies/ruby-1.9.2-p318/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/boro/.rvm/rubies/ruby-1.9.2-p318/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/boro/.rvm/gems/ruby-1.9.2-p318@ember_rails/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/boro/.rvm/gems/ruby-1.9.2-p318@ember_rails/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /home/boro/.rvm/gems/ruby-1.9.2-p318@ember_rails/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 06:56:35 +0200
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.erb within layouts/application (2.3ms)
+Compiled styles.css  (0ms)  (pid 23736)
+Compiled jquery.mobile.css  (2074ms)  (pid 23736)
+Compiled application.css  (2089ms)  (pid 23736)
+Compiled env.js  (0ms)  (pid 23736)
+Compiled jquery.js  (4ms)  (pid 23736)
+Compiled jquery_ujs.js  (0ms)  (pid 23736)
+Compiled jquery.mobile.js  (1ms)  (pid 23736)
+Compiled handlebars.js  (0ms)  (pid 23736)
+Compiled ember.js  (36ms)  (pid 23736)
+Compiled ember-data.js  (0ms)  (pid 23736)
+Compiled ember_mobile.js  (0ms)  (pid 23736)
+Compiled controllers/cats_controller.js  (0ms)  (pid 23736)
+Compiled helpers/helpers.js  (0ms)  (pid 23736)
+Compiled jquery_mobile.js  (0ms)  (pid 23736)
+Compiled models/cat.js  (0ms)  (pid 23736)
+Compiled routes/app_router.js  (0ms)  (pid 23736)
+Compiled store.js  (0ms)  (pid 23736)
+Compiled templates/cat.js  (107ms)  (pid 23736)
+Compiled templates/list.js  (2ms)  (pid 23736)
+Compiled templates/all.js  (123ms)  (pid 23736)
+Compiled views/cat_entry_view.js  (0ms)  (pid 23736)
+Compiled views/cat_view.js  (0ms)  (pid 23736)
+Compiled views/list_view.js  (0ms)  (pid 23736)
+Compiled application.js  (391ms)  (pid 23736)
+Completed 200 OK in 2669ms (Views: 2668.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2012-08-19 06:56:38 +0200
+Served asset /styles.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:38 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-19 06:56:38 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2012-08-19 06:56:38 +0200
+Served asset /jquery.mobile.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:38 +0200
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/env.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:38 +0200
+Served asset /env.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /jquery.mobile.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /handlebars.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ember.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /ember.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/ember-data.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /ember-data.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ember_mobile.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /ember_mobile.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /application.js - 304 Not Modified (69ms)
+
+
+Started GET "/assets/controllers/cats_controller.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /controllers/cats_controller.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/helpers/helpers.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /helpers/helpers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_mobile.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /jquery_mobile.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/models/cat.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /models/cat.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/routes/app_router.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /routes/app_router.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /store.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/templates/cat.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /templates/cat.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/templates/list.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /templates/list.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/templates/all.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /templates/all.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/views/cat_entry_view.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /views/cat_entry_view.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/views/cat_view.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /views/cat_view.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/views/list_view.js?body=1" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /views/list_view.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery-mobile/icons-18-white.png" for 127.0.0.1 at 2012-08-19 06:56:39 +0200
+Served asset /jquery-mobile/icons-18-white.png - 304 Not Modified (9ms)
+
+
+Started GET "/cats?page=1" for 127.0.0.1 at 2012-08-19 06:56:40 +0200
+Processing by CatsController#index as */*
+  Parameters: {"page"=>"1"}
+Completed 200 OK in 4447ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats?page=2" for 127.0.0.1 at 2012-08-19 06:58:11 +0200
+Processing by CatsController#index as */*
+  Parameters: {"page"=>"2"}
+Completed 200 OK in 4320ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /styles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /jquery.mobile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/env.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /env.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /jquery.mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /handlebars.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ember.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /ember.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ember-data.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /ember-data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember_mobile.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /ember_mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/controllers/cats_controller.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /controllers/cats_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/helpers/helpers.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /helpers/helpers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_mobile.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /jquery_mobile.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routes/app_router.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /routes/app_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/cat.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /models/cat.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/templates/cat.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /templates/cat.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/templates/list.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /templates/list.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/templates/all.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /templates/all.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/views/cat_entry_view.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /views/cat_entry_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/list_view.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /views/list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/cat_view.js?body=1" for 127.0.0.1 at 2012-08-19 08:52:40 +0200
+Served asset /views/cat_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2012-08-19 08:52:41 +0200
+Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-mobile/icons-18-white.png" for 127.0.0.1 at 2012-08-19 08:52:41 +0200
+Served asset /jquery-mobile/icons-18-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/cats?page=1" for 127.0.0.1 at 2012-08-19 08:52:41 +0200
+Processing by CatsController#index as */*
+  Parameters: {"page"=>"1"}
+Completed 200 OK in 7346ms (Views: 1.2ms | ActiveRecord: 0.0ms)

@@ -14,9 +14,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.mobile
-//= require handlebars
-//= require ember
-//= require ember-data
+//= require ember/handlebars
+//= require ember/ember
+//= require ember/ember-data
 //= require ember_mobile
 //= require_self
 //= require_tree .

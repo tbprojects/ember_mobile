@@ -1,7 +1,13 @@
 h1. Ember Mobile
 
-Here is a simple SPA application, which utilizes Ruby on Rails as data provider and Ember.js + jQuery Mobile for user interface: You can use that app as draft for creating your super Single Page App!
+Here is a simple SPA application, which utilizes Ruby on Rails 3.2.11 as data provider and Ember.js + jQuery Mobile for user interface: You can use that app as draft for creating your super Single Page App!
 
 Checkout live demo: http://ember-rails.tbprojects.pl
+
+In this example the SPA displays list of cats from http://www.lolcats.com website. User can change pages of results and load single bigger image. Ruby on Rails application fetches data from external source, parse it with Nokogiri and then respond with prepared JSON.
+
+jQuery Mobile was used to introduce mobile friendly interface. Using Ember.js and jQuery Mobile together might be tricky, however following proof of concept helped me to prepare this example: https://github.com/LuisSala/emberjs-jqm
+
+The ember app can be found in app/javascripts directory.
 
 tbprojects 2012

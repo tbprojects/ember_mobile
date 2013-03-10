@@ -1,7 +1,7 @@
 h1. Ember Mobile
 
-It is an example of single-page app built with
-* Ember.js
-* jQuery mobile
+Here is a simple SPA application, which utilizes Ruby on Rails as data provider and Ember.js + jQuery Mobile for user interface: You can use that app as draft for creating your super Single Page App!
 
-Tomasz Borowski 2012
+Checkout live demo: http://ember-rails.tbprojects.pl
+
+tbprojects 2012

@@ -4,6 +4,8 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 
+gem 'capistrano'
+gem 'rvm-capistrano'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -13,6 +15,10 @@ group :assets do
   gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :production do
+  gem 'unicorn'
 end
 
 gem 'jquery-rails'

@@ -14,3 +14,8 @@
 /log/*.log
 /tmp
 /.idea
+
+# deploy config
+/config/deploy/*
+/config/deploy.rb
+Capfile

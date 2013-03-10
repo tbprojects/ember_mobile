@@ -22,6 +22,6 @@ group :production do
 end
 
 gem 'jquery-rails'
-gem 'ember-rails'
+gem 'ember-rails', '0.8.0'
 gem 'jquery_mobile_rails'
 gem 'nokogiri'

@@ -18,4 +18,5 @@
 # deploy config
 /config/deploy/*
 /config/deploy.rb
+/config/unicorn/*
 Capfile

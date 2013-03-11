@@ -10,4 +10,8 @@ jQuery Mobile was used to introduce mobile friendly interface. Using Ember.js an
 
 The ember app can be found in app/javascripts directory.
 
+If you like it, then please endorse it :)
+
+"!http://api.coderwall.com/tomaszborowski/endorsecount.png!":http://coderwall.com/tomaszborowski
+
 tbprojects 2012
